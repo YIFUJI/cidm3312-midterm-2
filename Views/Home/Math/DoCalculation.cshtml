@@ -1,0 +1,27 @@
+
+@model MathOperation
+
+<form asp-controller="Math" asp-action="ShowCalculation" method="post">
+
+<div>
+  Left Operand :
+  <input id="LeftOperand" asp-for="@Model.LeftOperand" name="LeftOperand" type="text" placeholder="LeftOperand" class="form-control input-md">
+</div>  
+
+<br/>
+
+<div>
+  Right Operand :
+  <input id="RightOperand" asp-for="@Model.RightOperand" name="RightOperand" type="text" placeholder="RightOperand" class="form-control input-md">
+</div> 
+
+<br/>
+
+<div>
+  Operand Select:
+  <input id="Operator" asp-for="@Model.Operator" name="Operator" type="text" placeholder="+,-,*,/" class="form-control input-md">
+</div> 
+
+<div>
+  <button id="calculate" name="calculate"  class="btn btn-primary">calculate</button>
+</div> 

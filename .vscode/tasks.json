@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/cidm3312midterm2.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

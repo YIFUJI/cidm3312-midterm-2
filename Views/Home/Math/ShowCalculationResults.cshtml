@@ -1,0 +1,9 @@
+@model MathOperation
+
+@{
+    ViewData["Title"] = "Calculation Result";
+}
+
+<p>@ViewData["Title"]</p>
+
+<p>@Model.LeftOperand @Model.Operator @Model.RightOperand = @Model.Result</p> 
